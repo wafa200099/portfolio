@@ -1,0 +1,253 @@
+@media screen and (max-width: 1340px) {
+    .navbar .navbar-right p {
+      display: none;
+    }
+    .navbar .navbar-right ul {
+      width: fit-content;
+    }
+  }
+  
+  @media screen and (max-width: 1212px) {
+    .navbar-right .list {
+      display: none;
+    }
+    .menu {
+      display: block;
+      margin-left: 10px;
+    }
+  
+    .search{
+      display: none;
+    }
+    .navbar-left {
+      width: 25%;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    
+      .header {
+           background-size: 100% 100%;
+            background-attachment: fixed;
+            position: relative;
+            z-index: 0;
+            background-image: linear-gradient(
+              -45deg,
+              rgba(59, 173, 227, 1) 0%,
+              rgba(87, 111, 230, 1) 25%,
+              rgba(152, 68, 183, 1) 51%,
+              rgba(255, 53, 127, 1) 100%
+            );
+            animation: AnimateBG 30s ease infinite;
+          }
+        
+          
+          @keyframes AnimateBG {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+          }
+      .header .header-content{
+        width: 100%;
+        height: 100%;
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header .header-content h1{
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 0;
+      }
+     
+        
+      .about-img{
+          width:100%;
+  
+      }
+      .about-content{
+          width: 100%;
+        
+      }
+      .about-content .list .item{
+         font-weight: 400;
+         font-size: smaller;
+      }
+      .about-content .list .item span{
+          font-size: 16px;
+      }
+  
+      .project {
+  
+          width: 100%;
+          height: 1700px;
+          padding-bottom: 1000px
+          
+      
+        }
+      
+        .project .container {
+  
+          width: 100%;
+          height: 2200px;
+          overflow: visible;
+  
+          
+        }
+      
+        .project .container .project-item {
+          width: 80%;
+          height: auto;
+          margin-bottom: 20px;
+          margin-left: 10%;
+        }
+        .project .project-item img {
+          width: 100%;
+          height: auto;
+        }
+        .project .project-item p {
+          width: 100%;
+          font: 1em sans-serif;
+      
+        }
+      
+  
+    
+  
+  
+  
+    .feeling {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .feeling .list {
+      width: 100%;
+      margin-top: 20px;
+      float: left;
+      padding-right: 1;
+      padding-left: 1;
+      margin-bottom: 10px;
+    }
+  
+    .contact {
+      width: 100%;
+  
+    }
+  
+    .contact .contact-img {
+      width: 100%;
+  
+    }
+    .contact .contact-details-item {
+      width: 100%;
+      position: relative;
+  
+    }
+    .contact .contact-details-item .start{
+     width: 100%;
+     position:relative4;
+     text-align:left;
+     margin-right: 50px;
+     margin-left: 50px;
+    }
+  
+  
+    .contact span {
+    
+      width: 100%;
+      font-size: 15px;
+      flex: 3;
+      margin-left: 0;
+      text-align: left;
+    }
+    hr{
+      width: 50%;
+  
+  
+    }
+  
+    .footer-bottom .item {
+      width: 50%;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+  }
+  
+  /* //less 760 */
+  @media (max-width: 760px) {
+    .navbar-top {
+      display: none;
+    }
+    .navbar-left {
+      width: 35%;
+    }
+  
+    .project .container {
+      width: 100%;
+      max-height: 700px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 580px) {
+    .footer-bottom p {
+      float: unset;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .footer-bottom .list {
+      float: unset;
+      text-align: center;
+    }
+    .footer-bottom .list .item {
+      float: unset;
+      /* display: inline-block; */
+    }
+  }
+  /* //less 500 */
+  @media (max-width: 500px) {
+    .navbar-left {
+      width: 35%;
+    }
+  
+    h1 {
+      font-size: 30px;
+    }
+  
+    h2 {
+      font-size: 25px;
+    }
+  
+    /* start header  */
+    .header .header-btn a {
+      padding: 8px;
+    }
+  
+    .header {
+      height: 70vh;
+    }
+    /* end header  */
+  
+    .projects .project-item {
+      width: 100%;
+      margin-bottom: 20px;
+      height: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
